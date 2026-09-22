@@ -1,13 +1,13 @@
 package LAB1;
 
-// Задание 7: метод класса, вычисляющий факториал с помощью цикла,
-// и проверка его работы.
+// зд7: метод класса, вычисляющий факториал с помощью цикла
+
 public class t7 {
 
     // n! = 1 * 2 * 3 * ... * n, по определению 0! = 1.
     public static long factorial(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("Факториал отрицательного числа не определён");
+            throw new IllegalArgumentException("факториал отрицательного числа не сущ");
         }
         long result = 1;
         for (int i = 2; i <= n; i++) {
@@ -23,9 +23,9 @@ public class t7 {
         }
 
         if (factorial(5) == 120) {
-            System.out.println("Проверка пройдена: 5! = 120");
+            System.out.println("проверка пройдена фактор5 = 120");
         } else {
-            System.out.println("Ошибка в методе factorial");
+            System.out.println("ошибка в методе factorial");
         }
     }
 }

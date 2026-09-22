@@ -1,39 +1,35 @@
 package LAB1;
 
 import java.util.Scanner;
-
-// Задание 4: массив вводится с клавиатуры, сумма считается
-// циклами while и do while, ищутся максимум и минимум.
+//зд4 вводится мас с клавы ищем сумму и мин макс ч/з вайл/ду вайл
 public class t4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Сколько элементов в массиве? ");
+        System.out.print("сколько элементов в массиве? ");
         int n = sc.nextInt();
         if (n <= 0) {
-            System.out.println("Количество элементов должно быть больше нуля.");
+            System.out.println("количество элементов должно быть больше нуля!!!!!");
             return;
         }
 
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
-            System.out.print("Введите элемент " + (i + 1) + ": ");
+            System.out.print("введите элемент " + (i + 1));
             arr[i] = sc.nextInt();
         }
 
-        // Сумма через while (цикл с предусловием)
-        int sumWhile = 0;
+        int sumwhile = 0;
         int i = 0;
         while (i < n) {
-            sumWhile += arr[i];
+            sumwhile += arr[i];
             i++;
         }
 
-        // Сумма через do while (цикл с постусловием)
-        int sumDoWhile = 0;
+        int sumdowhile = 0;
         int j = 0;
         do {
-            sumDoWhile += arr[j];
+            sumdowhile += arr[j];
             j++;
         } while (j < n);
 
@@ -49,9 +45,9 @@ public class t4 {
             }
         }
 
-        System.out.println("Сумма (while): " + sumWhile);
-        System.out.println("Сумма (do while): " + sumDoWhile);
-        System.out.println("Максимальный элемент: " + max);
-        System.out.println("Минимальный элемент: " + min);
+        System.out.println("сумма вайл: " + sumwhile);
+        System.out.println("сумма ду вайл: " + sumdowhile);
+        System.out.println("макс элемент: " + max);
+        System.out.println("мин элемент: " + min);
     }
 }

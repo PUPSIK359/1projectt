@@ -1,11 +1,11 @@
 package LAB1;
 
 import java.util.Arrays;
-//зд3 создаем мссив инициализаице как в ис и в цикле фор считаем сумму и ср ариф
+//зд3 создаем мссив инициализируем как в си и в цикле фор считаем сумму и ср ариф
 
 public class t3 {
     public static void main(String[] args) {
-        int[] numbers = {5, 12, -3, 8, 20, 7, 1};
+        int[] numbers = {5, 12, 3, 8, 20, 7, 1};
 
         int sum = 0;
         for (int i = 0; i < numbers.length; i++) {

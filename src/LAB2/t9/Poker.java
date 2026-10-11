@@ -18,7 +18,6 @@ public class Poker {
         String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Валет", "Дама", "Король", "Туз"};
         String[] suits = {"Пик", "Червей", "Бубен", "Треф"};
 
-        // 1. Собираем колоду из 52 карт
         String[] deck = new String[52];
         int k = 0;
         for (int s = 0; s < suits.length; s++) {

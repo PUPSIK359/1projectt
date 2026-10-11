@@ -10,7 +10,7 @@ public class Shop {
     }
 
     public void addComputer(Computer c) {
-        // Номера компьютеров не должны повторяться
+
         for (int i = 0; i < count; i++) {
             if (computers[i].getNumber() == c.getNumber()) {
                 System.out.println("Компьютер с номером " + c.getNumber() + " уже есть");
@@ -46,7 +46,6 @@ public class Shop {
         System.out.println("Компьютер удалён");
     }
 
-    // Поиск по марке (энумы сравниваются через ==)
     public void findByBrand(Brand brand) {
         boolean found = false;
         for (int i = 0; i < count; i++) {
@@ -60,7 +59,7 @@ public class Shop {
         }
     }
 
-    // Поиск по объёму памяти: не меньше minRam ГБ
+
     public void findByMinRam(int minRam) {
         boolean found = false;
         for (int i = 0; i < count; i++) {

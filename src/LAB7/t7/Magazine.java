@@ -16,7 +16,6 @@ public class Magazine implements Printable {
         System.out.printf("Журнал '%s'%n", name);
     }
 
-    // Выводит названия только журналов, книги пропускает
     public static void printMagazines(Printable[] printable) {
         for (int i = 0; i < printable.length; i++) {
             if (printable[i] instanceof Magazine) {

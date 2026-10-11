@@ -21,7 +21,6 @@ public class MovablePoint implements Movable {
         return ySpeed;
     }
 
-    // Ось Y направлена вниз (как на экране): вверх - это уменьшение y
     @Override
     public void moveUp() {
         y = y - ySpeed;

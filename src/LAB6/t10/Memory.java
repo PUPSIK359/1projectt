@@ -1,8 +1,8 @@
 package LAB6.t10;
 
 public class Memory {
-    private int size;      // ГБ
-    private String type;   // например, DDR4
+    private int size;
+    private String type;
 
     public Memory(int size, String type) {
         this.size = size;

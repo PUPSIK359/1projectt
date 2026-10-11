@@ -2,7 +2,7 @@ package LAB7.t7;
 
 public class PrintableTest {
     public static void main(String[] args) {
-        // Массив типа Printable хранит и книги, и журналы
+
         Printable[] items = {
                 new Book("Война и мир", "Л. Н. Толстой", 1863),
                 new Magazine("Хакер"),

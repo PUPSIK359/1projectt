@@ -12,7 +12,6 @@ public class MathFunc implements MathCalculable {
         return Math.sqrt(re * re + im * im);
     }
 
-    // Длина окружности, число PI берётся из интерфейса
     public double circleLength(double r) {
         return 2 * PI * r;
     }

@@ -2,7 +2,7 @@ package LAB6.t10;
 
 import java.util.Scanner;
 
-// Реализация интерфейса: ввод с клавиатуры
+// реализация интерфейса для ввода с клавы
 public class ConsoleComputerInput implements ComputerInput {
     private Scanner sc;
 

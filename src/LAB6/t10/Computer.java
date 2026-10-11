@@ -3,7 +3,7 @@ package LAB6.t10;
 public class Computer {
     private int number;
     private Brand brand;
-    private Processor processor;   // композиция: компьютер состоит из частей
+    private Processor processor;
     private Memory memory;
     private Monitor monitor;
     private double price;

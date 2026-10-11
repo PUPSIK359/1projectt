@@ -20,7 +20,6 @@ public class Book implements Printable {
         System.out.printf("Книга '%s' (автор %s) была издана в %d году%n", name, author, year);
     }
 
-    // Выводит названия только книг, журналы пропускает
     public static void printBooks(Printable[] printable) {
         for (int i = 0; i < printable.length; i++) {
             if (printable[i] instanceof Book) {

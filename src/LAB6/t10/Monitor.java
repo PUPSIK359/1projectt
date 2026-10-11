@@ -1,8 +1,8 @@
 package LAB6.t10;
 
 public class Monitor {
-    private double diagonal;      // дюймы
-    private String resolution;    // например, 1920x1080
+    private double diagonal;
+    private String resolution;
 
     public Monitor(double diagonal, String resolution) {
         this.diagonal = diagonal;

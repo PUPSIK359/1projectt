@@ -10,7 +10,6 @@ public class OnlineShop {
         }
     }
 
-    // Просит выбрать каталог по номеру, возвращает null при неверном номере
     static Category chooseCategory(Scanner sc) {
         printCategories();
         System.out.print("Номер каталога: ");
@@ -25,7 +24,6 @@ public class OnlineShop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // 1. Аутентификация: три попытки
         Authenticator auth = new Authenticator();
         boolean ok = false;
         int attempts = 0;

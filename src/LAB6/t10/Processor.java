@@ -2,7 +2,7 @@ package LAB6.t10;
 
 public class Processor {
     private String model;
-    private double frequency;   // ГГц
+    private double frequency;
     private int cores;
 
     public Processor(String model, double frequency, int cores) {

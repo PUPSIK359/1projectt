@@ -6,7 +6,6 @@ public class MovableTest {
         System.out.println("Начало:        " + rect);
         System.out.println("Скорости одинаковые: " + rect.speedTest());
 
-        // Переменная типа интерфейса: работает с любым Movable
         Movable m = rect;
         m.moveRight();
         System.out.println("После moveRight: " + rect);
@@ -16,7 +15,6 @@ public class MovableTest {
         m.moveDown();
         System.out.println("После moveLeft и moveDown: " + rect);
 
-        // Прямоугольник из двух точек с разной скоростью
         MovablePoint p1 = new MovablePoint(0, 0, 1, 1);
         MovablePoint p2 = new MovablePoint(5, 4, 2, 1);
         MovableRectangle bad = new MovableRectangle(p1, p2);

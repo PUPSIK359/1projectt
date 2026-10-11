@@ -18,7 +18,6 @@ public class ProcessStrings implements StringOperations {
         return count;
     }
 
-    // Позиции считаются с единицы: 1, 3, 5 - это индексы 0, 2, 4
     @Override
     public String oddPositions(String s) {
         String result = "";

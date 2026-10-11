@@ -7,7 +7,6 @@ public class ShopApp {
         Scanner sc = new Scanner(System.in);
         Shop shop = new Shop(30);
 
-        // Переменная типа интерфейса: источник данных можно заменить
         ComputerInput input = new ConsoleComputerInput(sc);
 
         int choice = -1;

@@ -1,0 +1,28 @@
+package block2.LAB13.t4;
+
+public class Shirt {
+    private String id;
+    private String description;
+    private String color;
+    private String size;
+
+    public Shirt(String id, String description, String color, String size) {
+        this.id = id;
+        this.description = description;
+        this.color = color;
+        this.size = size;
+    }
+
+    public static Shirt fromString(String line) {
+        String[] f = line.split(",");
+        return new Shirt(f[0].trim(), f[1].trim(), f[2].trim(), f[3].trim());
+    }
+
+    @Override
+    public String toString() {
+        return "Артикул: " + id + "\n"
+                + "Описание: " + description + "\n"
+                + "Цвет: " + color + "\n"
+                + "Размер: " + size + "\n";
+    }
+}
